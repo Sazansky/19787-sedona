@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a>Гостиницы</a></li>
+        </ul>
+        <a href="index.html" class="main-header-logo">
+          <img src="img/index-logo.svg" width="138" height="70" alt="Логотип поиска жилья в городе «Седона»">
+        </a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="filter">
+        <form class="filter-form">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <input type="checkbox" name="waterpool" checked>
+            <label>Бассейн</label>
+            <input type="checkbox" name="parking">
+            <label>Парковка</label>
+            <input type="checkbox" name="wifi">
+            <label>Wi-Fi</label>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <input type="checkbox" name="hotel" checked>
+            <label>Гостиница</label>
+            <input type="checkbox" name="motel" checked>
+            <label>Мотель</label>
+            <input type="checkbox" name="apartments" checked>
+            <label>Апартаменты</label>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="indicator">
+              <label for="min-price">
+                От
+                <input type="text" name="min-price" id="min-price" value="0">
+              </label>
+              <label for="max-price">
+                До
+                <input type="text" name="max-price" id="max-price" value="3000">
+              </label>
+            </div>
+            <div class="range"></div>
+          </fieldset>
+          <button type="button">Показать</button>
+        </form>
+      </section>
+      <section class="search-results">
+        <span class="search-found">Найдено: 3</span>
+        <span class="search-sorting">Сортировка:</span>
+        <ul class="search-filter">
+          <li><a href="#" class="price">По цене</a></li>
+          <li><a href="#" class="type">По типу</a></li>
+          <li><a href="#" class="rating">По рейтингу</a></li>
+        </ul>
+        <ul class="search-arrow">
+          <li><a href="#" class="arrow">По возрастанию</a></li>
+          <li><a href="#" class="arrow">По убыванию</a></li>
+        </ul>
+
+        <article class="search-results-item">
+          <img src="img/amara.png" alt="Фотография гостиницы Amara Resort" width="135" height="90">
+          <div class="search-results-description">
+            <h2><a href="#">Amara Resort &amp; SPA</a></h2>
+            <span>Гостиница</span>
+            <span>От 4000 р.</span>
+            <p class="button-item">
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </p>
+          </div>
+          <div class="search-results-rating">
+            <span class="rating-stars"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="rating-value">Рейтинг: 8,5</span>
+          </div>
+        </article>
+        <article class="search-results-item">
+          <img src="img/desert.png" alt="Фотография мотеля Desert Quail Inn" width="135" height="90">
+          <div class="search-results-description">
+            <h2><a href="#">Desert Quail Inn</a></h2>
+            <span>Мотель</span>
+            <span>От 3000 р.</span>
+            <p class="button-item">
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </p>
+          </div>
+          <div class="search-results-rating">
+            <span class="rating-stars"></span>
+            <span></span>
+            <span></span>
+            <span class="rating-value">Рейтинг: 8,9</span>
+          </div>
+        </article>
+        <article class="search-results-item">
+          <img src="img/villas.png" alt="Фотография апартаменты Villas At Poco Diablo" width="135" height="90">
+          <div class="search-results-description">
+            <h2><a href="#">Villas At Poco Diablo</a></h2>
+            <span>Апартаменты</span>
+            <span>От 2000 р.</span>
+            <p class="button-item">
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </p>
+          </div>
+          <div class="search-results-rating">
+            <span class="rating-stars"></span>
+            <span></span>
+            <span class="rating-value">Рейтинг: 9,2</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <a class="footer-hashtag" href="#">#visitsedona</a>
+      <ul class="footer-social">
+        <li><a href="#" class="social-btn">Twitter</a></li>
+        <li><a href="#" class="social-btn">Facebook</a></li>
+        <li><a href="#" class="social-btn">YouTube</a></li>
+      </ul>
+      <a class="footer-copyright" href="#">Website by</a>
+    </footer>
+
+  </body>
+</html>
