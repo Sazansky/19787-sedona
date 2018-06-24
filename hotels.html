@@ -13,7 +13,7 @@
         <li><a class="main-navigation-item" href="#">Информация</a></li>
         <li><a class="main-navigation-item" href="#">Фото и видео</a></li>
         <li><a class="main-navigation-item" href="#">Карта штата</a></li>
-        <li><a class="main-navigation-item active-hostels">Гостиницы</a></li>
+        <li><a class="main-navigation-item main-navigation-item-active">Гостиницы</a></li>
       </ul>
       <a href="index.html" class="main-header-logo">
         <img src="img/index-logo.png" width="138" height="70" alt="Логотип поиска жилья в городе «Седона»">
@@ -22,41 +22,41 @@
   </header>
 
   <main class="main-content">
-    <section class="filter">
+    <section class="filter-hotels">
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filter-fieldset filter-fieldset-infra">
-          <legend class="filter-fieldset-caption">Инфраструктура:</legend>
-          <input class="filter-fieldset-input" type="checkbox" name="waterpool" id="waterpool" checked>
-          <label class="filter-fieldset-label" for="waterpool">Бассейн</label>
-          <input class="filter-fieldset-input" type="checkbox" name="parking" id="parking">
-          <label class="filter-fieldset-label" for="parking">Парковка</label>
-          <input class="filter-fieldset-input" type="checkbox" name="wifi" id="wifi">
-          <label class="filter-fieldset-label" for="wifi">Wi-Fi</label>
+          <legend class="filter-caption">Инфраструктура:</legend>
+          <input class="filter-input" type="checkbox" name="waterpool" id="waterpool" checked>
+          <label class="filter-label" for="waterpool">Бассейн</label>
+          <input class="filter-input" type="checkbox" name="parking" id="parking">
+          <label class="filter-label" for="parking">Парковка</label>
+          <input class="filter-input" type="checkbox" name="wifi" id="wifi">
+          <label class="filter-label" for="wifi">Wi-Fi</label>
         </fieldset>
         <fieldset class="filter-fieldset filter-fieldset-housing">
-          <legend class="filter-fieldset-caption">Тип жилья:</legend>
-          <input class="filter-fieldset-input" type="checkbox" name="hotel" id="hotel" checked>
-          <label class="filter-fieldset-label" for="hotel">Гостиница</label>
-          <input class="filter-fieldset-input" type="checkbox" name="motel" id="motel" checked>
-          <label class="filter-fieldset-label" for="motel">Мотель</label>
-          <input class="filter-fieldset-input" type="checkbox" name="apartments" id="apartments" checked>
-          <label class="filter-fieldset-label" for="apartments">Апартаменты</label>
+          <legend class="filter-caption">Тип жилья:</legend>
+          <input class="filter-input" type="checkbox" name="hotel" id="hotel" checked>
+          <label class="filter-label" for="hotel">Гостиница</label>
+          <input class="filter-input" type="checkbox" name="motel" id="motel" checked>
+          <label class="filter-label" for="motel">Мотель</label>
+          <input class="filter-input" type="checkbox" name="apartments" id="apartments" checked>
+          <label class="filter-label" for="apartments">Апартаменты</label>
         </fieldset>
         <fieldset class="filter-fieldset filter-fieldset-price">
-          <legend class="filter-fieldset-caption">Стоимость в сутки (Р):</legend>
+          <legend class="filter-caption">Стоимость в сутки (Р):</legend>
           <div class="indicator">
-            <label class="filter-fieldset-label" for="min-price">
+            <label class="filter-label" for="min-price">
               От
-              <input class="filter-fieldset-input" type="text" name="min-price" id="min-price" value="0">
+              <input class="filter-input" type="text" name="min-price" id="min-price" value="0">
             </label>
-            <label class="filter-fieldset-label" for="max-price">
+            <label class="filter-label" for="max-price">
               До
-              <input class="filter-fieldset-input" type="text" name="max-price" id="max-price" value="3000">
+              <input class="filter-input" type="text" name="max-price" id="max-price" value="3000">
             </label>
           </div>
           <div class="range"></div>
         </fieldset>
-        <button class="filter-form-btn" type="button">Показать</button>
+        <button class="filter-form-submit" type="button">Показать</button>
       </form>
     </section>
     <section class="search-results">
@@ -79,7 +79,7 @@
           <span class="search-result-cost">Гостиница</span>
           <span class="search-result-cost">От 4000 р.</span>
           <p class="button-item">
-            <a class="button-item-more" href="#">Подробнее</a>
+            <a class="button-item-about" href="#">Подробнее</a>
             <a class="button-item-book" href="#">Забронировать</a>
           </p>
         </div>
@@ -98,7 +98,7 @@
           <span class="search-result-cost">Мотель</span>
           <span class="search-result-cost">От 3000 р.</span>
           <p class="button-item">
-            <a class="button-item-more" href="#">Подробнее</a>
+            <a class="button-item-about" href="#">Подробнее</a>
             <a class="button-item-book" href="#">Забронировать</a>
           </p>
         </div>
@@ -116,7 +116,7 @@
           <span class="search-result-cost">Апартаменты</span>
           <span class="search-result-cost">От 2000 р.</span>
           <p class="button-item">
-            <a class="button-item-more" href="#">Подробнее</a>
+            <a class="button-item-about" href="#">Подробнее</a>
             <a class="button-item-book" href="#">Забронировать</a>
           </p>
         </div>
@@ -131,7 +131,7 @@
 
   <footer class="main-footer">
     <a class="footer-hashtag" href="#">#visitsedona</a>
-    <ul class="footer-social">
+    <ul class="footer-social-list">
       <li><a href="#" class="social-btn">Twitter</a></li>
       <li><a href="#" class="social-btn">Facebook</a></li>
       <li><a href="#" class="social-btn">YouTube</a></li>
